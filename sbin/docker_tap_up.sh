@@ -22,6 +22,10 @@ sudo route delete -net 10.96.0.0 -netmask 255.240.0.0 10.0.75.2 >/dev/null
 sudo route delete -net 10.1.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
 sudo route delete -net 10.1.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
 sudo route delete -net 10.1.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
+sudo route delete -net 172.17.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
+sudo route delete -net 172.17.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
+sudo route delete -net 172.17.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
 sudo route add -net 10.96.0.0 -netmask 255.240.0.0 10.0.75.2 >/dev/null
 sudo route add -net 10.1.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
+sudo route add -net 172.17.0.0 -netmask 255.255.0.0 10.0.75.2 >/dev/null
 
