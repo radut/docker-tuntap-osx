@@ -9,6 +9,7 @@ brew install dnsmasq
 mkdir -pv $(brew --prefix)/etc/
 
 
+echo 'proxy-dnssec' >> $(brew --prefix)/etc/dnsmasq.conf
 echo 'address=/.dev/127.0.0.1' >> $(brew --prefix)/etc/dnsmasq.conf
 echo 'server=/consul/127.0.0.1#8600' >> $(brew --prefix)/etc/dnsmasq.conf
 echo 'server=/cluster.local/10.96.0.10' >> $(brew --prefix)/etc/dnsmasq.conf
