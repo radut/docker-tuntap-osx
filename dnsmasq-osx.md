@@ -26,14 +26,21 @@ sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/cluster.local'
 
 sudo launchctl stop homebrew.mxcl.dnsmasq
 sudo launchctl start homebrew.mxcl.dnsmasq
+```
+
+## fix resolv.conf if you modified it
+```
+sudo rm /etc/resolv.conf
+sudo ln -s /var/run/resolv.conf /etc/resolv.conf
+```
 
 
-#config 
+
+### other config 
+```
 # Tell dnsmasq to get its DNS servers from this config file only
 no-resolv
 # Add alternate DNS servers
 server=1.1.1.1
-
-
 
 ```
