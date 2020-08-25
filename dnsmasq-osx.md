@@ -44,3 +44,11 @@ no-resolv
 server=1.1.1.1
 
 ```
+
+
+#### change dns from cmd line
+```
+networksetup -setdnsservers Wi-fi 1.1.1.1
+## check dns settings
+scutil --dns
+```
